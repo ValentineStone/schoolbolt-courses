@@ -1,9 +1,31 @@
-# 1. Вводное занятие
+<style>
+/* auto numbering with li*/
+.lesson-list {
+  list-style: none;
+  counter-reset: li;
+}
+.lesson-list > li {
+  counter-increment: li;
+}
+.lesson-list > li::before {
+  content: counter(li);
+  opacity: .2;
+  font-size: 2em;
+}
+</style>
+
+> 
+
+<ol class="lesson-list">
+
+<li>
+
+# Вводное занятие
 - Знакомство, краткое обсуждение скилсета учеников.
 - _Практика, создание примитивной сранички, выводящей цветной заголовок_
 - Роль преподавателя, самообразования и самостоятельной работы в образовательном процессе.
 - Браузер, метафора "слепого художника", трансформация данных (см. цитату)
-- HTML и CSS, краткая история интернета, как одно вышло из другого, и как web менял лицо от документов, через сайты и к web-приложениям.
+- Краткая история интернета, как одно вышло из другого, и как web менял лицо от документов, через сайты и к web-приложениям.
 
 ```html
 Простой текст
@@ -13,12 +35,124 @@
 > So what is a game engine well basically what it is is a or at least its goal is to transform data from one format into another that's what this is all about data transformation right we essentially read in a set of files from disk we take the data from those files and we transform it into something else that shows up on our screens okay that's it and furthermore we almost always provide a way to interact with that data as well but that's really all a game engine is and that's what we're going to be building something that reads data in and transforms it into something that we see on our screens
 > -- [*TheChernoProject, YouTube's auto generated captions*](https://www.youtube.com/watch?v=vtWdgtMo1T4&index=2&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT)
 
-# 2. HTML: структура и некоторые теги
+<li>
+
+# HTML
+- Небольшая история
 - DOM: структура документа
 - HTML vs XML, отсутствие жёсткой структуры при написании для удобства чтения
+- **Документация**
 - `<html>`, `<head>` и `<body>` - их автоматический инференс и случаи где их необходимо писать явно
 - Комментарии, спецсимволы
+- Базовые теги для верстки документов
 
+<li>
+
+# Гипертекст, структура проекта + `<map>`
+- Адресация, абсолютная и относительная
+- Сылки, картинки, видео и пр.
+- `<iframe>`, кратко
+- `<map>` и `<area>`
+
+<li>
+
+# CSS
+- Небольшая история
+- **Документация**
+- Синтаксис
+- Селекторы
+- Сложные селекторы
+- Наследование
+
+<li>
+
+# CSS flow
+- Принципы CSS flow
+- `diplay`
+- `position`
+- Плавающие элементы
+- ...
+
+<li>
+
+# Ещё CSS flow
+- Центрирование, различные способы
+- Колочная вёрстка
+
+<li>
+
+# Ещё CSS
+- Шрифты
+- `@import`, адресация
+- Cелекторы атрибутов
+- Псевдоклассы
+- Псевдоэелементы
+
+<li>
+
+# Формы, элементы ввода
+- Стилизация элементы ввода
+- Префиксы и суффиксы
+
+<li>
+
+# CSS-анимации, CSS-трансформации, CSS-переходы
+
+<li>
+
+# Адаптивная верстка
+- Задачи решаемые адаптивной версткой
+- Альтернативные подходы, их преимущетсва
+- Медиа-запросы
+- Дополнительные аргументы к `@import`
+
+```html
+<link rel="stylesheet" media="only screen and (max-width: 400px)" href="mobile.css" />
+<link rel="stylesheet" media="only screen and (min-width: 401px)" href="desktop.css" />
+```
+
+<li>
+
+# Библиотеки CSS *(кратко)*
+- Bootstrap
+- Google Fonts (удалённое подключение)
+- пр.
+
+<li>
+
+# JavaScript *(кратко)*
+- Императивные языки
+- Данные в памяти, *супер-кратко*
+- Переменные и константы
+- Типы данных, примитивы и обекты
+- Работа с DOM
+
+<li>
+
+# Немного о технологиях будущего ;)
+- Web Components
+- ES6 `import` & `export`
+- Практика: Создание компонентов
+- *Если осстанется время немного подробнее о js*
+
+<li>
+
+# Практика / Работа над проектом
+
+<li>
+
+# Практика / Работа над проектом
+
+<li>
+
+# Практика / Работа над проектом
+
+
+
+</ol>
+
+<hr>
+<details> <summary>Reference</summary>
 
 ## Верстка. Программа рассчитана на 2 месяца, или на 16 занятий
 
@@ -110,3 +244,5 @@
 
 ### 16
 Помощь с проектом
+
+</details>
