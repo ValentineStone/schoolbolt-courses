@@ -1,19 +1,4 @@
-<style>
-/* auto numbering with li*/
-.lesson-list {
-  list-style: none;
-  counter-reset: li;
-}
-.lesson-list > li {
-  counter-increment: li;
-}
-.lesson-list > li::before {
-  content: counter(li);
-  opacity: .2;
-  font-size: 2em;
-}
-</style>
-
+<!-- Auto numbering with li -->
 <ol class="lesson-list">
 
 <li>
@@ -146,10 +131,7 @@
 # Практика / Работа над проектом
 
 
-
 </ol>
-
-<hr>
 <details> <summary>Reference</summary>
 
 ## Верстка. Программа рассчитана на 2 месяца, или на 16 занятий
