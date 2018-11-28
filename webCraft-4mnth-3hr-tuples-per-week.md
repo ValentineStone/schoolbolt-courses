@@ -14,8 +14,6 @@
 }
 </style>
 
-> 
-
 <ol class="lesson-list">
 
 <li>
